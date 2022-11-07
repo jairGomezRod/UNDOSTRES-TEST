@@ -1,0 +1,9 @@
+# HEART BEAT APP
+
+## DEBUG
+
+1. Descarge esta carpeta (E1-HEARTBEAT)
+2. En su administrador de archivos, diríjase al sitio dónde descargó los archivos con extensión html.
+3. Ejecute este archivo (index.html) en el navegador de su preferencia. 
+
+
