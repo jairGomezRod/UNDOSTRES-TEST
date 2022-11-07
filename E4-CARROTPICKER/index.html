@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrot picker</title>
+
+    <style>
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 100%;
+            width: 100%;
+        }
+
+        .form {
+            text-align: center;
+        }
+
+        .form__group {
+            margin: 10px;
+        }
+
+        .form__section {
+            margin: 10px;
+        }
+
+        #startCollectionButton,
+        #arrayCellsSection {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <form class="form">
+            <div class="form__group">
+                <label for="lengthX">Ingresa la cantidad celdas verticales de la matriz "X": </label>
+                <input type="number" id="lengthX" name="lengthX">        
+            </div>
+
+            <div class="form__group">
+                <label for="lengthY">Ingresa la cantidad celdas horizontales de la matriz "Y": </label>
+                <input type="number" id="lengthY" name="lengthY">        
+            </div>
+
+            <div class="form__group" id="arrayCellsSection">
+                <div class="form__section">Ingresa la cantidad de zanahorias a recolectar</div>
+
+                <div id="arrayCellsContent"></div>
+                        
+            </div>
+            
+            <div class="form_group">
+                <h3 id="result"></h3>
+            </div>
+
+            <div class="form__group">
+                <button onclick="createArray()" id="createArrayButton" type="button">
+                    Calcular matriz
+                </button>
+                <button onclick="startCollection()" id="startCollectionButton" type="button">
+                    Iniciar recolección
+                </button>
+                <button onclick="resetFields()" type="button">
+                    Resetear
+                </button>
+            </div>
+        </form>
+
+    </div>
+    <script src="./carrotpicker.js"></script>
+</body>
+</html>
